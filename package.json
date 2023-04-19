@@ -1,0 +1,33 @@
+{
+  "name": "checkme",
+  "version": "0.1.0-alpha.1",
+  "description": "A collection of functions to check various types of data in TypeScript",
+  "main": "dist/checking.js",
+  "module": "dist/checking.esm.js",
+  "types": "dist/checking.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "build": "npm run clean && rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript"
+  },
+  "keywords": [
+    "validate",
+    "type",
+    "check",
+    "checking"
+  ],
+  "author": "LIjiAngChen8",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "rollup": "^3.20.6",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  },
+  "files": [
+    "dist",
+    "es"
+  ]
+}
